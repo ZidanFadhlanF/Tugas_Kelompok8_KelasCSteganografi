@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSB Steganography - Encode</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <i class="fas fa-bars" id="menuIcon"></i>
+        <h1>LSB Steganography</h1>
+    </header>
+    <div id="menu" class="hidden">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="encode.html">Encode</a></li>
+            <li><a href="decode.html">Decode</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Encoding</h1>
+        <!-- Form untuk encoding -->
+        <label for="imageInput" style="color: #4b4343; font-weight: bold;">Masukkan Pesan Rahasia:</label>
+        <textarea id="textInput" placeholder="Enter Text to Hide"></textarea>
+        <label for="imageInput" style="color: #4b4343; font-weight: bold;">Pilih Gambar:</label>
+        <input type="file" id="imageInput">
+        <button onclick="encode()">Encode</button>
+    </div>
+        <div id="output"></div>
+    <script src="script.js"></script>
+</body>
+</html>

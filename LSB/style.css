@@ -1,0 +1,201 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    
+    color: white;
+    background-color: #4b4343;
+}
+
+header {
+    position: relative; /* Membuat header menjadi konteks posisi */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Menempatkan elemen ke kiri */
+    background-color: #3d3b3b;
+    color: white;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0; /* Menghilangkan margin default */
+    position: absolute; /* Menjadikan h1 menjadi absolut */
+    left: 50%; /* Menempatkan h1 di tengah secara horizontal */
+    transform: translateX(-50%); /* Menggeser h1 ke kiri sejauh setengah dari lebarnya */
+}
+
+#menuIcon {
+    margin-right: auto;
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+    margin-left: 7px;
+}
+
+#menuIcon:hover {
+    transform: scale(1.4); 
+}
+
+#menu {
+    margin-bottom: -114px;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0%;
+}
+
+#menu ul li a {
+    display: block; /* Menjadikan setiap pilihan sebagai block */
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #3d3b3b;
+    transition: background-color 0.3s ease;
+    width: 63px;
+    
+}
+
+#menu ul li a:hover {
+    background-color: #555; /* Efek hover pada setiap pilihan */
+}
+
+p {
+    font-size: 26px;
+    font-family: Arial;
+    margin: 5% 15% ;
+    border: 1px solid rgb(218, 114, 218);
+    padding: 15px;
+    border-radius: 10px;
+    color:#ffffff;
+    background-color: #3d3b3b;
+
+}
+
+.b p {
+    font-size: 20px;
+    font-family: Helvetica;
+    margin-left: 0;
+    margin-top: -6%;
+    border: 1px solid rgb(218, 114, 218);
+    padding: 15px;
+    border-radius: 20px;
+    color:#ffffff;
+    background-color: #3d3b3b;
+    width: 250px;
+}
+
+
+h3 {
+    font-size: 20px;
+    font-family: Helvetica;
+    margin-top: 0;
+    border: 1px solid rgb(218, 114, 218);
+    padding: 5px 14px 5px 14px;
+    border-radius: 40px;
+    color:#ffffff;
+    width: 72px;
+    background-color: #3d3b3b;
+
+}
+
+
+.b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+#c{
+    margin: auto;
+}
+
+#d{
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    max-width: 400px; /* Lebar maksimum container */
+    margin: 40px auto; /* Pusatkan container */
+    padding: 20px; /* Padding agar konten tidak terlalu dekat dengan pinggiran */
+    background-color: #f5f5f5; /* Warna latar belakang */
+    border-radius: 10px; /* Sudut border container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk memberi kedalaman */
+
+}
+
+.container h1 {
+    font-size: 24px; /* Ukuran font untuk judul */
+    margin-bottom: 50px; /* Margin bawah agar terpisah dari elemen-elemen di bawahnya */
+    color: #4b4343;
+    text-align: center;
+}
+
+.container textarea {
+    display: block; /* Menjadikan elemen-elemen ini menjadi block agar tampil secara vertikal */
+    width: 95%; /* Lebar elemen sesuai dengan container */
+    margin-top: 9px;
+    margin-bottom: 20px; /* Margin bawah agar terpisah dari elemen-elemen di bawahnya */
+    padding: 10px; /* Padding agar konten tidak terlalu dekat dengan pinggiran */
+    border: 1px solid #ccc; /* Border agar terlihat */
+    border-radius: 5px; /* Sudut border */
+}
+
+.container input[type="file"] {
+    display: block; /* Menjadikan elemen-elemen ini menjadi block agar tampil secara vertikal */
+    width: 95%; /* Lebar elemen sesuai dengan container */
+    margin-top: 9px;
+    margin-bottom: 10px; /* Margin bawah agar terpisah dari elemen-elemen di bawahnya */
+    padding: 10px; /* Padding agar konten tidak terlalu dekat dengan pinggiran */
+    border: 1px solid #ccc; /* Border agar terlihat */
+    border-radius: 5px; /* Sudut border */
+    color:#3d3b3b;
+}
+
+.container button {
+    display: block; /* Menjadikan elemen-elemen ini menjadi block agar tampil secara vertikal */
+    width: 100%; /* Lebar elemen sesuai dengan container */
+    margin-top: 40px;
+    margin-bottom: 10px; /* Margin bawah agar terpisah dari elemen-elemen di bawahnya */
+    padding: 10px; /* Padding agar konten tidak terlalu dekat dengan pinggiran */
+    border: 1px solid #ccc; /* Border agar terlihat */
+    border-radius: 5px; /* Sudut border */
+}
+
+.container button {
+    background-color: #4b4343; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Hapus border agar terlihat lebih bersih */
+    cursor: pointer; /* Ubah kursor saat mengarah ke tombol */
+}
+
+.container button:hover {
+    background-color: #3d3b3b; /* Warna latar belakang tombol saat hover */
+}
+
+#output {
+    max-width: 400px;
+    margin: 40px auto; 
+    padding: 20px; 
+    border-radius: 10px; 
+    color: #4b4343;
+    background-color: #f5f5f5;
+    transition: opacity 2s ease;
+    opacity: 0;
+}
+
+#output img {
+    width: 100%;
+    height: 100%;
+    margin: auto auto;
+}
+
+
